@@ -19,10 +19,12 @@ const ParkingTimer: React.FC<Props> = ({navigation}) => {
 
   const [datas] = useState([
     {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
+    {lable: 'Address', value: '9569, trantow Courts'},
+    {lable: 'Vehicle', value: 'Toyota Land Cru (AFD 6397)'},
+    {lable: 'Parking Spot', value: 'Parking Lot of Son Manolia'},
+    {lable: 'Date', value: 'May 11, 2023'},
+    {lable: 'Duration', value: '4 hours'},
+    {lable: 'Hours', value: '09:00 AM - 13:00 PM'},
   ]);
 
   useEffect(() => {

@@ -23,14 +23,19 @@ const ReviewSummryScreen: React.FC<Props> = ({navigation}) => {
   const selected_sport = useAppSelector(
     state => state.parkingData.selectedParking,
   );
-  const selectedItem: TItemData = paymenrdata.find(i => i.select == true);
+
+  const selectedItem: Ipayment | undefined = paymenrdata.find(
+    i => i.select === true,
+  );
 
   const datas = [
     {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
-    {lable: 'Parking Area', value: 'Parking Lot of Son Manolia'},
+    {lable: 'Address', value: '9569, trantow Courts'},
+    {lable: 'Vehicle', value: 'Toyota Land Cru (AFD 6397)'},
+    {lable: 'Parking Spot', value: 'Parking Lot of Son Manolia'},
+    {lable: 'Date', value: 'May 11, 2023'},
+    {lable: 'Duration', value: '4 hours'},
+    {lable: 'Hours', value: '09:00 AM - 13:00 PM'},
   ];
   const amountData = [
     {lable: 'Amount', value: '$8.0'},

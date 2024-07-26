@@ -56,8 +56,7 @@ const BookingParkingScreen: React.FC<Props> = ({navigation}) => {
     );
   };
 
-  return (
-    <View style={styles.container}>
+  return ( <View style={styles.container}>
       <HeaderWithTitel
         onpress={() => navigation.pop()}
         titel="Book Parking Details"
